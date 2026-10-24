@@ -1,0 +1,16 @@
+FC LIVE — Firebase package
+
+काय तयार आहे:
+- index.html मध्ये Firebase Realtime Database live listener आणि Firebase Authentication Admin login जोडले आहे.
+- database.rules.json मध्ये public read आणि फक्त दिलेल्या Admin UID ला write अशी सुरक्षा आहे.
+- firebase.json Hosting साठी आहे.
+
+महत्त्वाचे:
+1) Firebase Console → Authentication → Sign-in method मध्ये Email/Password सक्षम असणे आवश्यक आहे.
+2) Authentication → Users मध्ये Admin account चा UID हा package मधील Admin UID शी जुळतो.
+3) Realtime Database → Rules मध्ये database.rules.json मधील नियम प्रकाशित करा. Publish करण्याआधी UID नीट तपासा.
+4) Hosting deploy करण्यासाठी Firebase CLI असलेला संगणक किंवा समर्थित cloud IDE लागेल; फक्त Firebase Console मधून HTML फाइल थेट deploy करता येत नाही.
+5) Hosting URL मिळाल्यावर मित्रांना ती लिंक पाठवा. ते viewer म्हणून live data पाहू शकतील.
+6) Admin login करताना Firebase Authentication मध्ये नोंदवलेला ईमेल आणि पासवर्ड ॲपमध्ये टाका; ते ChatGPT ला पाठवू नका.
+
+टीप: हे तयार केलेले integration package आहे; तुमच्या Firebase project वर प्रत्यक्ष deploy/test केलेले नाही. प्रथम hosting वर publish करून दोन फोनवर तपासा.
